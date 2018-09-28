@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/Bloodlister/TheShop#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "npm": "^6.4.1",
+    "pug": "^2.0.3"
   }
 }

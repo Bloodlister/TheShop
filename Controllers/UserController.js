@@ -1,6 +1,6 @@
 class UserController {
     static Profile(req, res) {
-        res.send('Login Page');
+      res.send('Profile Page: ' + req.session.page_views);
     }
 }
 
