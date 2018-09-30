@@ -1,0 +1,11 @@
+doctype html
+html
+   include Partials/head.pug
+   
+   body
+      include Partials/header.pug
+      include Partials/sidebar.pug
+      div(id='shopWrapper')
+         block content
+      
+      include Partials/footer.pug

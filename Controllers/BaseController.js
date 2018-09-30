@@ -1,7 +1,11 @@
 class BaseController {
    static index(req, res) {
       res.render('Base/index', {
-         testVar: req.session.page_views
+         item: {
+            title: "THE_TITLE",
+            description: "THE_DESCRIPTION",
+            image: 'https://robohash.org/akshbklsav.png'
+         }
       });
    }
 }

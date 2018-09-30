@@ -1,0 +1,20 @@
+- var categories = ['Home', 'Categories']
+
+nav#mainHeader
+   ul#headerNavigation
+      each nav in categories
+         li.navigationItem
+            span= nav
+   
+   h1#pageTitle= "The Fastest Shop"
+   
+   ul#userNavigation
+      if locals.session.user
+         li.navigationItem
+            span= "My Account"
+            
+      else
+         li.navigationItem
+            span= "Log in"
+         li.navigationItem
+            span= "Register"

@@ -1,2 +1,13 @@
+extends ../main.pug
 
-div="The amount of views is too much: " + testVar
+block content
+   div#spotLight
+      h2.header= "The newest articles on the site!"
+   
+      div.articlesContainer
+         - for (let x = 0; x < 8; x++)
+            div.article
+               div.image(style='background-image: url("' + item.image +'")')
+               div.title= item.title
+               div.description= item.description
+         

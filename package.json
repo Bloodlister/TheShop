@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass --include-path public/scss public/scss/main.scss public/css/main.css --output-style compressed",
+    "watch": "nodemon -e scss -x \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
     "express-session": "^1.15.6",
     "npm": "^6.4.1",
     "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
   }
 }

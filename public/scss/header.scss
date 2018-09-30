@@ -1,0 +1,58 @@
+#mainHeader {
+   padding: 5px 0px;
+   border: 1px solid black;
+   display: flex;
+   justify-content: space-between;
+
+   #pageTitle {
+      flex: 1;
+      text-align: center;
+      font-size: 38px;
+   }
+
+   #headerNavigation {
+      list-style: none;
+      display: flex;
+      flex: 2;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .navigationItem {
+         display: table;
+         margin:0px 15px;
+         border: 1px solid black;
+         height: 40px;
+         width: 15%;
+
+         span {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+         }
+      }
+   }
+
+   #userNavigation {
+      list-style: none;
+      display: flex;
+      flex: 2;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+
+      .navigationItem {
+         display: table;
+         margin: 0px 15px;
+         border: 1px solid black;
+         height: 40px;
+         width: 15%;
+
+         span {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+         }
+      }
+   }
+
+}
