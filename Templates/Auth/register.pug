@@ -1,0 +1,15 @@
+extends ../main.pug
+
+block content
+    form#main-form.half(method="POST")
+        div.form-group
+            p.form-label= "Username: "
+            input.form-input(type="text" name="user" required)
+        div.form-group
+            p.form-label= "Password: "
+            input.form-input(type="password" name="password" required)
+        div.form-group
+            p.form-label= "Email: "
+            input.form-input(type="email" name="email" required)
+
+        button.form-submit.centered(type="submit")= "Register"

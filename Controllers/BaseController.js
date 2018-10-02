@@ -1,12 +1,13 @@
 class BaseController {
-   static index(req, res) {
-      res.render('Base/index', {
-         item: {
-            title: "THE_TITLE",
-            description: "THE_DESCRIPTION",
-            image: 'https://robohash.org/akshbklsav.png'
-         }
-      });
+   static Index(req, res) {
+       console.log(req.session);
+        res.render('Base/index', {
+            item: {
+                title: "THE_TITLE",
+                description: "THE_DESCRIPTION",
+                image: 'https://robohash.org/akshbklsav.png'
+            }
+        });
    }
 }
 

@@ -3,3 +3,24 @@
    margin: 0;
    padding: 0;
 }
+
+a:visited {
+    color: black;
+}
+
+.half {
+    width: 50%;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.spaced {
+    justify-content: space-around;
+}

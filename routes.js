@@ -4,6 +4,6 @@ const authRouter = require('./Routers/auth');
 
 module.exports = function(app) {
    app.use('/', baseRouter);
-   app.use('/auth', authRouter);
+   app.use('/', authRouter);
    app.use('/user', userRouter);
 };
