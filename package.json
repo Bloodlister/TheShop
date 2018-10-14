@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "build": "node-sass --include-path public/scss public/scss/main.scss public/css/main.css --output-style compressed",
     "watch": "nodemon -e scss -x \"npm run build\""
   },

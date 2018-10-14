@@ -17,10 +17,22 @@ a:visited {
 }
 
 .horizontal {
-    display: flex;
     flex-direction: row;
+}
+
+.vertical {
+    flex-direction: column;
 }
 
 .spaced {
     justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.error {
+    color: red;
 }

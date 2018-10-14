@@ -19,14 +19,18 @@ class AuthController {
                     };
                     res.redirect("/");
                 } else {
-                    res.redirect('/login');
+                    res.redirect('/login',);
                 }
             });
         });
     }
 
     static RegisterForm(req, res) {
-        res.render('Auth/register');
+        let data = {
+            usernameError: req.query.errUser,
+            emailError: req.query.errEmail,
+        }
+        res.render('Auth/register', data);
     }
 
     static Register(req, res) {
@@ -39,12 +43,12 @@ class AuthController {
         User.find({user: userData.user})
             .then(users => {
                 if (typeof users !== 'undefined' && users.length > 0) {
-                    res.redirect('/register?error=Username is taken.');
+                    res.redirect('/register?errUser=1');
                 } else {
                     User.find({email: userData.email})
                         .then(users => {
                             if (typeof users !== 'undefined' && users.length > 0) {
-                                res.redirect('/register?error=Email is taken.');
+                                res.redirect('/register?errEmail=1');
                             } else {
                                 const user = new User(userData);
                                 user.save((err, newUser) => {

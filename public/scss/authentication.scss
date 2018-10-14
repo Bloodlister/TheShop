@@ -7,16 +7,18 @@
 
     .form-group {
         display: flex;
+        flex-direction: column;
         margin: 5px;
 
-        .form-label {
-            width: 25%;
-        }
+        .row {
+            .form-label {
+                width: 25%;
+            }
 
-        .form-input {
-            width: 75%;
+            .form-input {
+                width: 75%;
+            }
         }
-
     }
 
     .form-submit {
@@ -29,5 +31,12 @@
         color:white;
         background-color: #33AA33;
         border: none;
+    }
+
+    .line {
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid black;
+        margin: 10px auto;
     }
 }

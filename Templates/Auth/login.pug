@@ -3,9 +3,13 @@ extends ../main.pug
 block content
     form#main-form.half(method="POST")
         div.form-group.horizontal.spaced
-            p.form-label= "Username: "
-            input.form-input(name="user", type="text")
+            div.row
+                p.form-label= "Username: "
+                input.form-input(name="user", type="text")
+                
         div.form-group.horizontal.spaced
-            p.form-label= "Password: "
-            input.form-input(name="password" type="password")
+            div.row
+                p.form-label= "Password: "
+                input.form-input(name="password" type="password")
+                    
         button.form-submit.centered(type="submit")= "Log in"
