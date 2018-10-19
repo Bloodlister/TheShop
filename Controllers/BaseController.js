@@ -1,6 +1,5 @@
 class BaseController {
    static Index(req, res) {
-       console.log(req.session);
         res.render('Base/index', {
             item: {
                 title: "THE_TITLE",

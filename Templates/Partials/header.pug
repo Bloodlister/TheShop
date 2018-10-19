@@ -17,6 +17,9 @@ nav#mainHeader
             li.navigationItem
                 span 
                     a(href="/user")= locals.session.user.user
+            li.navigationItem
+                span
+                    a(href="/cart")= "Cart"
             
         else
             li.navigationItem

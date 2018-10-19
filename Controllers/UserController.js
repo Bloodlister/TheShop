@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 
 class UserController {
     static Profile(req, res) {
-        res.send('Username: ' + req.session.user + ' | Profile Page: ' + req.session.page_views);
+        res.send('Username: ' + req.session.user.name + ' | Profile Page: ' + req.session.page_views);
     }
 
     static Edit(req, res) {

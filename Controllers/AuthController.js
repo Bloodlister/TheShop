@@ -14,7 +14,7 @@ class AuthController {
                 if (result) {
                     req.session.user = {
                         db_id: foundUser._id,
-                        user: foundUser.user,
+                        name: foundUser.user,
                         email: foundUser.email
                     };
                     res.redirect("/");

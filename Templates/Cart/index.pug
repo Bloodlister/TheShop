@@ -1,0 +1,14 @@
+extends ../main.pug
+
+block page_title
+    h1.textCentered Your Cart
+
+block content
+    div.mainWrapper
+        if cartItems.length > 0
+            ol
+                each item in cartItems
+                    li= item.title
+        else
+            p Your cart is empty! Go pick some <a href="/">stuff</a>
+            

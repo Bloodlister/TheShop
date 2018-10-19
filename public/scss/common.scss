@@ -4,8 +4,15 @@
    padding: 0;
 }
 
-a:visited {
+a, a:visited {
     color: black;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .half {
@@ -14,6 +21,10 @@ a:visited {
 
 .centered {
     margin: 0 auto;
+}
+
+.textCentered {
+    text-align: center;
 }
 
 .horizontal {
